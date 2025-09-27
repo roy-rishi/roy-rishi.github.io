@@ -50,8 +50,7 @@ const content = JSON.parse(
                     "type": "paragraph",
                     "heading": "Club Activities",
                     "content": [
-                        "We host events that cater to all levels and interests in computer science. Additionally, members of Inglemoor's IB CS, Web Design, and C# classes can benefit from our homework help sessions, tips, and environment to learn.",
-                        "<a class='button' href='https://inglemoorccc.org/'>Club Website<image src='./assets/icons/arrow-right.svg' class='right-arrow-icon'/></a>"
+                        "We host events that cater to all levels and interests in computer science. Additionally, members of Inglemoor's IB CS, Web Design, and C# classes can benefit from our homework help sessions, tips, and environment to learn."
                     ]
                 },
                 {
@@ -59,8 +58,8 @@ const content = JSON.parse(
                     "heading": "Northshore Coding Competition",
                     "content": [
                         "A competition that we hosted at our high school. It aimed to build upon skills students learned in an out of the classroom throughout the school year. The officer team that I directed created questions and solutions, fundraised for food, and promoted the event to highschoolers in our school district. Additionally, we reached out to sponsors and guest speakers, bringing a principal machine learning scientist at Microsoft and a software development manager at Amazon to speak to our attendees on their life stories.",
-                        "With 35 students in attendance from around the district, the event was an all-round success. We learned a lot, and we are bringing this event back for April, 2024.",
-                        "<a class='button' href='https://ncc.inglemoorccc.org/'>Competition Page<image src='./assets/icons/arrow-right.svg' class='right-arrow-icon'/></a>"
+                        "With 35 students in attendance from around the district, the event was an all-round success.",
+                        "In 2024, we ran the 2nd Annual Northshore Coding Competition at Bothell High School with three schools in attendance."
                     ]
                 },
                 {
@@ -110,6 +109,53 @@ const content = JSON.parse(
             ]
         },
         {
+            "id": "trophy",
+            "title": "PCB Trophy",
+            "descr": "A trophy-shaped PCB for the Northshore Coding Competition",
+            "thumbnail": "trophy/01.jpg",
+            "banner": "",
+            "body": [
+                {
+                    "type": "gallery",
+                    "heading": "",
+                    "content": [
+                        ["trophy/02.jpg"]
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "PCB Design",
+                    "content": [
+                        "The PCB features a TPS610985 boost converter IC to step up the voltage from a single AAA battery. A momentary switch and transistor activate the lights when pressed."
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "heading": "",
+                    "content": [
+                        ["trophy/05.jpg"],
+                        ["trophy/01.jpg", "trophy/04.jpg"]
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "CAD",
+                    "content": [
+                        "I designed a 3D-printed stand that holds a AAA battery and stands up the PCB. It hides the wires that connect the PCB to the battery contacts. There is enough wiggle room so that the wire is long enough to solder before gluing, but can fold into a small Z-shape when assembled.",
+                        "To reduce costs, the different prize levels were written by gluing a 3D-printed panel onto a rectangular region of exposed copper. This produces the desired silver text, but allows all of the PCBs to be ordered in one batch of 5."
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "heading": "",
+                    "content": [
+                        ["trophy/cad1.png", "trophy/cad2.png"],
+                        ["trophy/cad3.png", "trophy/cad4.png"]
+                    ]
+                }
+            ]
+        },
+        {
             "id": "violin-robot",
             "title": "Violin Robot",
             "descr": "A violin playing robot built on precise Computer-Aided Design & powered by a custom circuit board",
@@ -119,8 +165,15 @@ const content = JSON.parse(
                     "type": "paragraph",
                     "heading": "",
                     "content": [
-                        "Designed to explore how robotics can apply machine learning to perform the intricate task of playing the violin. Few other instruments demand the speed, agility, and precision, that the violin does. With a long bow that needs to be guided precisely through its stroke, and a fingerboard without frets, it takes years of dedicated practice to master this instrument. <span style='font-style: italic;'>Could a robot learn to play the violin?</span> Better yet, could it learn new pieces without human input? With endless possibilities for achieving this, the project and the answer to that question are a work in progress; highlights in its Computer-Aided Design (CAD) and electronics are available one this page.",
-                        "The robot will take input of any song by a MIDI and audio file, and plan the motion of the robot. Just like a human, the robot will dynamically adjust it's motion according to real-time audio and motion feedback. These systems, paired with specialized mechanics, will work together to drive the robot at the high speeds and extreme precision that playing the violin demands. Through this project, I am developing software and mechanical systems that advance my skills in robotics. I know that I have and will continue to take away skills that I would have never had if not for this project, and I hope to implement those in medicine and sustainability in the future."
+                        "Designed to explore how robots can perform the intricate task of playing the violin. Few other instruments demand the speed, agility, and precision, that the violin does. With a long bow that needs to be guided precisely through its stroke, and a fingerboard without frets, it takes years of dedicated practice to master this instrument. <span style='font-style: italic;'>Could a robot learn to play the violin?</span> Better yet, could it learn new pieces without human input? With endless possibilities for achieving this, the project and the answer to that question are a work in progress; highlights in its Computer-Aided Design (CAD) and electronics are available one this page.",
+                        "The robot will take input of any song by a MIDI file, and plan the motion of the robot. Just like a human, the robot will dynamically adjust it's motion according to real-time audio and motion feedback. These systems, paired with specialized mechanics, will work together to drive the robot at the high speeds and extreme precision that playing the violin demands. Through this project, I am developing software and mechanical systems that advance my skills in robotics. Though this project is not finished, I know that I have and will continue to take away skills that I would have never had if not for this project, and I hope to implement those in medicine and sustainability in the future."
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "Note",
+                    "content": [
+                        "This is an older project. Things have changed, and it most certainly did not and does not yet work. It is a project that I revisit every so often, and hope to complete when I gain more experience and simplify requirements."
                     ]
                 },
                 {
@@ -158,7 +211,7 @@ const content = JSON.parse(
                     "type": "paragraph",
                     "heading": "",
                     "content": [
-                        "<h3>Component 4</h3>At the forefront of the fingering mechanism is this carriage. It rapidly slides alongst the length of the string, controlling the pitch by contacting the string with a roller. Given the need for both speed and extreme precision, this was the most challenging aspect of the robot's mechanics. It is belt-driven and powered by two high-amperage stepper motors. As it is critical to minimize the weight of the moving carriage, it uses a different type of rail than the bow. This allows for plastic bushings to guide the carriage long the rail instead of the heavier v-wheels and accompanying hardware. The weight savings allow for faster movements with greater precision and reduced risk of lost steps.",
+                        "<h3>Component 4</h3>At the forefront of the fingering mechanism is this carriage. It rapidly slides alongst the length of the string, controlling the pitch by contacting the string with a roller. Given the need for both speed and extreme precision, this was the most challenging aspect of the robot's mechanics. It is belt-driven and powered by two stepper motors. As it is critical to minimize the weight of the moving carriage, it uses a different type of rail than the bow. This allows for plastic bushings to guide the carriage long the rail instead of the heavier v-wheels and accompanying hardware. The weight savings allow for faster movements with greater precision and reduced risk of lost steps.",
                         "<h3>Component 5</h3>This smaller carriage mounts the roller that contacts the violin's strings. It dynamically adjusts for the slant of the violin strings, and can lift away from the string. It is extremely light-weight to allow for rapid movements along the lenght of the string. Although it is currently operated by a micro-servo mounted to the sliding carriage, future revisions will be remotely actuated by a cable (similar to cable-actuated bike brake) further minimizing weight while allowing for speed beyond the capabilities of a micro-servo."
                     ]
                 },
@@ -192,7 +245,8 @@ const content = JSON.parse(
                     "type": "paragraph",
                     "heading": "<h1>Specialized Circuit Board</h1>",
                     "content": [
-                        "Based on the ATmega2560 microcontroller, this board performs hardware actions requested by a Raspberry Pi single board computer. It drives 6 stepper motors, takes sensor input, and manages a custom active cooling system. It implements robust power supply circuity and cooling to drive motors at 36 V, for a system maximum of 360 W. The software will be written for the Raspberry Pi and the custom board."
+                        "Based on the ATmega2560 microcontroller, this board will perform hardware actions requested by a Raspberry Pi single board computer. It drives 6 stepper motors, takes sensor input, and manages a custom active cooling system. It implements robust power supply circuity and cooling to drive motors at 36 V, for a system maximum of 360 W. The software will be written for the Raspberry Pi and the custom board.",
+                        "Note: again, this is an old design that I would now make several revisions to. I have not redesigned the board yet."
                     ]
                 },
                 {
@@ -336,140 +390,6 @@ const content = JSON.parse(
             ]
         },
         {
-            "id": "ecologme",
-            "title": "EcologMe",
-            "descr": "A website that generates actionable ideas for anyone to lower their environmental footprint",
-            "thumbnail": "ecologme/01.webp",
-            "banner": "",
-            "body": [
-                {
-                    "type": "gallery",
-                    "heading": "",
-                    "content": [
-                        ["ecologme/02.webp"]
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "Details",
-                    "content": [
-                        "EcologMe’s mission is to empower individuals to make a positive impact on the environment. Through user and locale-based input, we generate actionable and motivating ideas for community members to lower their environmental footprint. By leveraging user input that includes their location, budget, and free time, our recommendations are incredibly personalized to address specific needs and preferences. This lends them to solutions that integrate well with the local community and keep individuals motivated to pursue their own goals.",
-                        "EcologMe collects localization input on crucial factors such as air quality, water quality, littering, and biodiversity. Our platform is dedicated to providing tailored solutions that are relevant to each individual's local community. By offering personalized recommendations that address personal concerns and motivations, we aim to inspire and empower individuals to take meaningful action towards a greener and more sustainable future – for their community, and themselves."
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "Data",
-                    "content": [
-                        ["ecologme/03.webp"],
-                        ["ecologme/04.webp"]
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "",
-                    "content": [
-                        "Individuals must understand and value the projected benefits of changing their behavior. Our platform has this at the heart of its design, making use of a stats page on the user’s local city to highlight pertinent issues that align with the generated suggestions for making progress. This page innovatively unites data with solutions by putting data at the center of the experience to highlight the data-driven nature of the solutions."
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "User-Specific Input",
-                    "content": [
-                        ["ecologme/05.webp"]
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "Generated Solutions",
-                    "content": [
-                        ["ecologme/06.webp"]
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "",
-                    "content": [
-                        "Based on the location-specific data that our website gathered, and the user input, the website generated five ideas. Here, it can be seen that because the user wanted to focus on their home energy usage, the first idea was to install smart thermostats. Unlike any previous software, our project also makes an argument, stating how and why the solution is ideal for the user. Through this creative implementation of emerging AI technology, our website promotes environmentalism at the individual level, a critical step to make a global difference in humanity's footprint."
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "instructables",
-            "title": "Instructables",
-            "descr": "Inspiring others through my projects",
-            "thumbnail": "instructables/01.webp",
-            "banner": "",
-            "body": [
-                {
-                    "type": "paragraph",
-                    "heading": "What Instructables Is",
-                    "content": [
-                        "Instructables is a website that provides a platform for people to share projects with step-by-step instructions for others to replicate. Users can upload their projects, which include detailed instructions, fiiles, and photos to help others replicate or get inspired from their work. It has become a popular resource for people seeking guidance and inspiration for their DIY endeavors, and it increases accessibilty to a range of topics.",
-                        "I publish many of my projects online, hoping they may inspire others. On Instructables, I write clear and concise guides that that anyone can follow. I not only show how I made my project, but also how <span style='font-style:italic;'>anyone</span> can make it. I use a 3D printer, however I explain alternative tools that can be used, how it can be done by hand, and how individuals could leverage community resources.",
-                        "<a class='button' href='https://www.instructables.com/member/Zero%20To%20Infinity/'>My Profile<image src='./assets/icons/arrow-right.svg' class='right-arrow-icon'/></a>"
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "Contests and Achievements",
-                    "content": [
-                        "Instructables runs contests for creating and publishing new high quality projects. They accept international entries from makers of all ages and professions, and have a community panel judge contest entries.",
-                        "I won first prize for a project on making strap-on cleats for traction in ice. The contest was winter themed, so I created a project (detailed below) that made an important safety device more accessible. The judges appreciated my clear presentation of an effective solution to slippery shoes. Out of nearly 100 entries, my entry was selected for the first prize.",
-                        "I won runner up for a student design challenge. I learned a new skill, and designed a project around it. See more below."
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "<h1>Strap-On Cleats for Ice and Snow Traction</h1>",
-                    "content": [
-                        "Winter can be such a blast, but slips and falls from slippery sidewalks and icy roads pose a serious threat to those that need to walk or commute in icy conditions, such as workers, students, or individuals with disabilities. They are at higher risk for serious injury, but don't always have the option to stay indoors. Snow shoes are often an excellent solution, but they are bulky and inaccessible. With many shoe sizes without cleats, this project helps anyone make one for their shoe. Some places rarely experience snow and ice, so homemade strap-on tracks can provide quick, accessible, and affordable relief to icy conditions.",
-                        "<a class='button' href='https://www.instructables.com/Strap-On-Cleats-for-Ice-and-Snow-Traction/'>My Project<image src='./assets/icons/arrow-right.svg' class='right-arrow-icon'/></a>"
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "",
-                    "content": [
-                        [
-                            "instructables/01.webp"
-                        ],[
-                            "instructables/05.webp"
-                        ]
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "CAD Procedure",
-                    "content": [
-                        "With my goal to make it easy for anyone to customize this project to their own needs, I showed an in-depth summary of my design and thought process, highlighting various CAD features that I used to make a cleat for my shoe."
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "",
-                    "content": [
-                        [
-                            "instructables/06.webp"
-                        ],[
-                            "instructables/03.webp"
-                        ],[
-                            "instructables/04.webp"
-                        ]
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "<h1>New Year, New Skill Student Design Challenge</h1>",
-                    "content": [
-                        "I designed a project in which I learned a new skill, Sheet Metal CAD Tools, and entered this into this contest. I showed what I learned, teaching others the same skill throught a novel approach to manufacturing.",
-                        "<a class='button' href='https://www.instructables.com/Custom-Paper-Dice-Using-Sheet-Metal-CAD-Tools/'>My Project<image src='./assets/icons/arrow-right.svg' class='right-arrow-icon'/></a>"
-                    ]
-                }
-            ]
-        },
-        {
             "id": "tsa",
             "title": "Inglemoor TSA",
             "descr": "Inglemoor's Technology Student Association (TSA) chapter",
@@ -570,6 +490,140 @@ const content = JSON.parse(
                     "heading": "2021",
                     "content": [
                         "<h3><span style='font-style: italic; font-weight: 700;'>4th Place</span> – Computer-Aided Design (CAD) 3D Engineering</h3>"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "instructables",
+            "title": "Instructables",
+            "descr": "Inspiring others through my projects",
+            "thumbnail": "instructables/01.webp",
+            "banner": "",
+            "body": [
+                {
+                    "type": "paragraph",
+                    "heading": "What Instructables Is",
+                    "content": [
+                        "Instructables is a website that provides a platform for people to share projects with step-by-step instructions for others to replicate. Users can upload their projects, which include detailed instructions, fiiles, and photos to help others replicate or get inspired from their work. It has become a popular resource for people seeking guidance and inspiration for their DIY endeavors, and it increases accessibilty to a range of topics.",
+                        "I publish many of my projects online, hoping they may inspire others. On Instructables, I write clear and concise guides that that anyone can follow. I not only show how I made my project, but also how <span style='font-style:italic;'>anyone</span> can make it. I use a 3D printer, however I explain alternative tools that can be used, how it can be done by hand, and how individuals could leverage community resources.",
+                        "<a class='button' href='https://www.instructables.com/member/Zero%20To%20Infinity/'>My Profile<image src='./assets/icons/arrow-right.svg' class='right-arrow-icon'/></a>"
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "Contests and Achievements",
+                    "content": [
+                        "Instructables runs contests for creating and publishing new high quality projects. They accept international entries from makers of all ages and professions, and have a community panel judge contest entries.",
+                        "I won first prize for a project on making strap-on cleats for traction in ice. The contest was winter themed, so I created a project (detailed below) that made an important safety device more accessible. The judges appreciated my clear presentation of an effective solution to slippery shoes. Out of nearly 100 entries, my entry was selected for the first prize.",
+                        "I won runner up for a student design challenge. I learned a new skill, and designed a project around it. See more below."
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "<h1>Strap-On Cleats for Ice and Snow Traction</h1>",
+                    "content": [
+                        "Winter can be such a blast, but slips and falls from slippery sidewalks and icy roads pose a serious threat to those that need to walk or commute in icy conditions, such as workers, students, or individuals with disabilities. They are at higher risk for serious injury, but don't always have the option to stay indoors. Snow shoes are often an excellent solution, but they are bulky and inaccessible. With many shoe sizes without cleats, this project helps anyone make one for their shoe. Some places rarely experience snow and ice, so homemade strap-on tracks can provide quick, accessible, and affordable relief to icy conditions.",
+                        "<a class='button' href='https://www.instructables.com/Strap-On-Cleats-for-Ice-and-Snow-Traction/'>My Project<image src='./assets/icons/arrow-right.svg' class='right-arrow-icon'/></a>"
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "heading": "",
+                    "content": [
+                        [
+                            "instructables/01.webp"
+                        ],[
+                            "instructables/05.webp"
+                        ]
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "CAD Procedure",
+                    "content": [
+                        "With my goal to make it easy for anyone to customize this project to their own needs, I showed an in-depth summary of my design and thought process, highlighting various CAD features that I used to make a cleat for my shoe."
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "heading": "",
+                    "content": [
+                        [
+                            "instructables/06.webp"
+                        ],[
+                            "instructables/03.webp"
+                        ],[
+                            "instructables/04.webp"
+                        ]
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "<h1>New Year, New Skill Student Design Challenge</h1>",
+                    "content": [
+                        "I designed a project in which I learned a new skill, Sheet Metal CAD Tools, and entered this into this contest. I showed what I learned, teaching others the same skill throught a novel approach to manufacturing.",
+                        "<a class='button' href='https://www.instructables.com/Custom-Paper-Dice-Using-Sheet-Metal-CAD-Tools/'>My Project<image src='./assets/icons/arrow-right.svg' class='right-arrow-icon'/></a>"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecologme",
+            "title": "EcologMe",
+            "descr": "A website that generates actionable ideas for anyone to lower their environmental footprint",
+            "thumbnail": "ecologme/01.webp",
+            "banner": "",
+            "body": [
+                {
+                    "type": "gallery",
+                    "heading": "",
+                    "content": [
+                        ["ecologme/02.webp"]
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "Details",
+                    "content": [
+                        "EcologMe’s mission is to empower individuals to make a positive impact on the environment. Through user and locale-based input, we generate actionable and motivating ideas for community members to lower their environmental footprint. By leveraging user input that includes their location, budget, and free time, our recommendations are incredibly personalized to address specific needs and preferences. This lends them to solutions that integrate well with the local community and keep individuals motivated to pursue their own goals.",
+                        "EcologMe collects localization input on crucial factors such as air quality, water quality, littering, and biodiversity. Our platform is dedicated to providing tailored solutions that are relevant to each individual's local community. By offering personalized recommendations that address personal concerns and motivations, we aim to inspire and empower individuals to take meaningful action towards a greener and more sustainable future – for their community, and themselves."
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "heading": "Data",
+                    "content": [
+                        ["ecologme/03.webp"],
+                        ["ecologme/04.webp"]
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "",
+                    "content": [
+                        "Individuals must understand and value the projected benefits of changing their behavior. Our platform has this at the heart of its design, making use of a stats page on the user’s local city to highlight pertinent issues that align with the generated suggestions for making progress. This page innovatively unites data with solutions by putting data at the center of the experience to highlight the data-driven nature of the solutions."
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "heading": "User-Specific Input",
+                    "content": [
+                        ["ecologme/05.webp"]
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "heading": "Generated Solutions",
+                    "content": [
+                        ["ecologme/06.webp"]
+                    ]
+                },
+                {
+                    "type": "paragraph",
+                    "heading": "",
+                    "content": [
+                        "Based on the location-specific data that our website gathered, and the user input, the website generated five ideas. Here, it can be seen that because the user wanted to focus on their home energy usage, the first idea was to install smart thermostats. Unlike any previous software, our project also makes an argument, stating how and why the solution is ideal for the user. Through this creative implementation of emerging AI technology, our website promotes environmentalism at the individual level, a critical step to make a global difference in humanity's footprint."
                     ]
                 }
             ]
