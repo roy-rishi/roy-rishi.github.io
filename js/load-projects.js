@@ -2,8 +2,7 @@
 var imgBaseURL = window.location.origin === "file://" ? "./assets/images/" : window.location.origin + "/assets/images/";
 var projectBaseURL = window.location.origin === "file://" ? "project.html" : window.location.origin + "/project";
 
-const content = JSON.parse(
-    `
+const content =
     [
         {
             "id": "red-pandas",
@@ -29,10 +28,10 @@ const content = JSON.parse(
                         [
                             "red-panda/2.webp",
                             "red-panda/0.webp"
-                        ],[
+                        ], [
                             "red-panda/3.webp",
                             "red-panda/4.webp"
-                        ],[
+                        ], [
                             "red-panda/1.webp"
                         ]
                     ]
@@ -69,9 +68,9 @@ const content = JSON.parse(
                         [
                             "ccc/02.webp",
                             "ccc/06.webp"
-                        ],[
+                        ], [
                             "ccc/05.webp"
-                        ],[
+                        ], [
                             "ccc/03.webp",
                             "ccc/07.webp"
                         ]
@@ -98,10 +97,10 @@ const content = JSON.parse(
                         [
                             "red-panda/2.webp",
                             "red-panda/0.webp"
-                        ],[
+                        ], [
                             "red-panda/3.webp",
                             "red-panda/4.webp"
-                        ],[
+                        ], [
                             "red-panda/1.webp"
                         ]
                     ]
@@ -156,122 +155,6 @@ const content = JSON.parse(
             ]
         },
         {
-            "id": "violin-robot",
-            "title": "Violin Robot",
-            "descr": "A violin playing robot built on precise Computer-Aided Design & powered by a custom circuit board",
-            "thumbnail": "violin-robot/render/hero-right2.webp",
-            "body": [
-                {
-                    "type": "paragraph",
-                    "heading": "",
-                    "content": [
-                        "Designed to explore how robots can perform the intricate task of playing the violin. Few other instruments demand the speed, agility, and precision, that the violin does. With a long bow that needs to be guided precisely through its stroke, and a fingerboard without frets, it takes years of dedicated practice to master this instrument. <span style='font-style: italic;'>Could a robot learn to play the violin?</span> Better yet, could it learn new pieces without human input? With endless possibilities for achieving this, the project and the answer to that question are a work in progress; highlights in its Computer-Aided Design (CAD) and electronics are available one this page.",
-                        "The robot will take input of any song by a MIDI file, and plan the motion of the robot. Just like a human, the robot will dynamically adjust it's motion according to real-time audio and motion feedback. These systems, paired with specialized mechanics, will work together to drive the robot at the high speeds and extreme precision that playing the violin demands. Through this project, I am developing software and mechanical systems that advance my skills in robotics. Though this project is not finished, I know that I have and will continue to take away skills that I would have never had if not for this project, and I hope to implement those in medicine and sustainability in the future."
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "Note",
-                    "content": [
-                        "This is an older project. Things have changed, and it most certainly did not and does not yet work. It is a project that I revisit every so often, and hope to complete when I gain more experience and simplify requirements."
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "Degrees of Freedom",
-                    "content": [
-                        "The robot is designed to perform these motions",
-                        "<video autoplay muted loop style='width: 100%'><source src='${imgBaseURL}violin-robot/render/dof.mp4' type='video/mp4'></video>"
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "Annotated Components",
-                    "content": [
-                        ["violin-robot/render/annotated-parts1.webp"]
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "",
-                    "content": [
-                        "<h3>Component 1</h3>The two z-axis carriages are responsible for guiding the bow rail upwards and downwards. They move a short distance vertically, allowing for the robot to modulate the pressure of the bow on the violin's string, dynamically adjust for misalignments throughout the bow-stroke, and provide other self-correcting measures.",
-                        "<h3>Component 2</h3>This carriage holds a real violin bow (bow not pictured) in its clamp, and contrains its sliding motion to the left and right as pictured. It rides on v-wheels positioned to direct counter-forces perpendicularly into the rail for precision even under the load of being pressed against the violin's strings. They are tensioned against the rail through the elasticity of the carriage, allowing for the lowest tolerances in its motion regardless of pressure. Note: This carriage was previously designed for a 20x40mm rail, however the design has since changed to use a 20x20mm rail to reduce moving mass. This is why the guide wheels have not yet been redesigned to fit the new, thinner rail.",
-                        "<h3>Component 3</h3>This arm supports a real violin, allowing it to rotate. This allows the robot to select which string, or strings, will make contact with the bow."
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "",
-                    "content": [
-                        ["violin-robot/render/back-annotated1.webp"]
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "",
-                    "content": [
-                        "<h3>Component 4</h3>At the forefront of the fingering mechanism is this carriage. It rapidly slides alongst the length of the string, controlling the pitch by contacting the string with a roller. Given the need for both speed and extreme precision, this was the most challenging aspect of the robot's mechanics. It is belt-driven and powered by two stepper motors. As it is critical to minimize the weight of the moving carriage, it uses a different type of rail than the bow. This allows for plastic bushings to guide the carriage long the rail instead of the heavier v-wheels and accompanying hardware. The weight savings allow for faster movements with greater precision and reduced risk of lost steps.",
-                        "<h3>Component 5</h3>This smaller carriage mounts the roller that contacts the violin's strings. It dynamically adjusts for the slant of the violin strings, and can lift away from the string. It is extremely light-weight to allow for rapid movements along the lenght of the string. Although it is currently operated by a micro-servo mounted to the sliding carriage, future revisions will be remotely actuated by a cable (similar to cable-actuated bike brake) further minimizing weight while allowing for speed beyond the capabilities of a micro-servo."
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "Interactive Model",
-                    "content": [
-                        "Click on the image, or click and drag to the left or right, to interact with the model below",
-                        "<iframe src='${imgBaseURL}violin-robot/36-frame-table.html' width='100%' height='640px' frameborder='0' scrolling='no'>"
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "Physical Build",
-                    "content": [
-                        "Various components and versions of the robot. Most parts have several revisions, and can be seen lined up. There were many unused prototypes and revisions that brought the robot to its current stage."
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "",
-                    "content": [
-                        [
-                            "violin-robot/01.jpg"
-                        ],[
-                            "violin-robot/02.jpg"
-                        ]
-                    ]
-                },
-                {
-                    "type": "paragraph",
-                    "heading": "<h1>Specialized Circuit Board</h1>",
-                    "content": [
-                        "Based on the ATmega2560 microcontroller, this board will perform hardware actions requested by a Raspberry Pi single board computer. It drives 6 stepper motors, takes sensor input, and manages a custom active cooling system. It implements robust power supply circuity and cooling to drive motors at 36 V, for a system maximum of 360 W. The software will be written for the Raspberry Pi and the custom board.",
-                        "Note: again, this is an old design that I would now make several revisions to. I have not redesigned the board yet."
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "",
-                    "content": [
-                        [
-                            "violin-robot/ee3.png",
-                            "violin-robot/ee4.png"
-                        ]
-                    ]
-                },
-                {
-                    "type": "gallery",
-                    "heading": "",
-                    "content": [
-                        [
-                            "violin-robot/ee1.png",
-                            "violin-robot/ee2.png"
-                        ]
-                    ]
-                }
-            ]
-        },
-        {
             "id": "photo",
             "title": "Photography",
             "descr": "Capturing nature through photography",
@@ -300,9 +183,9 @@ const content = JSON.parse(
                         [
                             "photo/astro_0226.webp",
                             "photo/astro_0231.webp"
-                        ],[
+                        ], [
                             "photo/astro_0227.webp"
-                        ],[
+                        ], [
                             "photo/astro_0245.webp",
                             "photo/astro_0222.webp"
                         ]
@@ -323,7 +206,7 @@ const content = JSON.parse(
                             "photo/wild_0498.webp",
                             "photo/wild_0463.webp",
                             "photo/wild_0564.webp"
-                        ],[
+                        ], [
                             "photo/wild_0481.webp",
                             "photo/wild_0450.webp",
                             "photo/wild_0631.webp"
@@ -345,10 +228,10 @@ const content = JSON.parse(
                             "photo/flower_0298.webp",
                             "photo/flower_0287.webp",
                             "photo/flower_0289.webp"
-                        ],[
+                        ], [
                             "photo/flower_0292.webp",
                             "photo/flower_0293.webp"
-                        ],[
+                        ], [
                             "photo/flower_0301.webp",
                             "photo/flower_0284.webp",
                             "photo/flower_0291.webp"
@@ -363,11 +246,11 @@ const content = JSON.parse(
                             "photo/land_0584.webp",
                             "photo/land_0620.webp",
                             "photo/land_121539.webp"
-                        ],[
+                        ], [
                             "photo/land_0855.webp",
                             "photo/land_2129.webp",
                             "photo/land_1026.webp"
-                        ],[
+                        ], [
                             "photo/land_095247.webp",
                             "photo/land_113230.webp",
                             "photo/land_163900.webp"
@@ -380,9 +263,9 @@ const content = JSON.parse(
                     "content": [
                         [
                             "photo/macro_0028.webp"
-                        ],[
+                        ], [
                             "photo/macro_0643.webp"
-                        ],[
+                        ], [
                             "photo/macro_0224.webp"
                         ]
                     ]
@@ -409,7 +292,7 @@ const content = JSON.parse(
                     "heading": "Resources",
                     "content": [
                         "Creating and releasing resources for members to use is a significant part of what we do. As a president, I brainstorm and launch initiatives to achieve this goal. In addition to the workshops, presentations, and mentorship program that we have, we have utilized online resources. Our website, which I became the webmaster of, links to several resources, and condenses information into easy-to-use formats. For example, there is a page to help members learn about the events that TSA offers."
-                        
+
                     ]
                 },
                 {
@@ -533,7 +416,7 @@ const content = JSON.parse(
                     "content": [
                         [
                             "instructables/01.webp"
-                        ],[
+                        ], [
                             "instructables/05.webp"
                         ]
                     ]
@@ -551,9 +434,9 @@ const content = JSON.parse(
                     "content": [
                         [
                             "instructables/06.webp"
-                        ],[
+                        ], [
                             "instructables/03.webp"
-                        ],[
+                        ], [
                             "instructables/04.webp"
                         ]
                     ]
@@ -628,19 +511,18 @@ const content = JSON.parse(
                 }
             ]
         }
-    ]`
-);
+    ];
 
 
 
 function getQueryValue(q) {
-       let query = window.location.search.substring(1);
-       let vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == q){return pair[1];}
-       }
-       return(false);
+    let query = window.location.search.substring(1);
+    let vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == q) { return pair[1]; }
+    }
+    return (false);
 }
 
 // load header
@@ -714,14 +596,14 @@ function loadGallerySection(header, images) {
 
         for (let row = 0; row < images[col].length; row++) {
             console.log("adding to gallery " + imgBaseURL + images[col][row]);
-            
+
             const imageContainer = document.createElement("div");
             imageContainer.setAttribute("class", "image-container");
 
             const image = document.createElement("img");
             image.setAttribute("class", "gallery-image");
             image.setAttribute("src", imgBaseURL + images[col][row]);
-            
+
             imageContainer.appendChild(image);
             column.appendChild(imageContainer);
         }
