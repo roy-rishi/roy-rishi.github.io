@@ -47,18 +47,15 @@
 <!-- 2 side-by-side images with captions -->
 <ImageCols images={imageData} />
 
-<!-- some text -->
+<!-- paragraphs -->
 <div class="flex flex-col gap-12">
-	<div class="mx-8 md:mx-60">
-		<h2>Electronics Design (ECAD)</h2>
+	<div class="mx-8 md:mx-40">
+		<h3>Electronics Design (ECAD)</h3>
 		<p>
 			The PCB features a TPS610985 boost converter IC to step up the voltage from a single AAA
 			battery. A momentary switch and transistor activate the lights when pressed.
 		</p>
-	</div>
-
-	<div class="mx-8 md:mx-60">
-		<h2>Mechanical Design (MCAD)</h2>
+		<h3 class="pt-14">Mechanical Design (MCAD)</h3>
 		<p>
 			I designed a 3D-printed stand that holds a AAA battery and stands up the PCB. It hides the
 			wires that connect the PCB to the battery contacts. There is enough wiggle room so that the

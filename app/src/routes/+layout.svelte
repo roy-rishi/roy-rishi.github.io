@@ -41,10 +41,6 @@
 			@apply text-4xl font-semibold;
 		}
 
-		p {
-			@apply text-lg mt-4;
-		}
-
 		a {
 			@apply hover:underline;
 		}
