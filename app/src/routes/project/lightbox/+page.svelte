@@ -26,6 +26,8 @@
 	];
 </script>
 
+<svelte:head><title>Lithopane Lightbox - Rishi Roy</title></svelte:head>
+
 <Title
 	title="Lithopane Lightbox"
 	description="A Bluetooth-controlled multi-color lightbox that illuminates a 3D lithopane to display an image"

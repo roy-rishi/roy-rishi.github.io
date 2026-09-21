@@ -34,6 +34,8 @@
 	}
 </script>
 
+<svelte:head><title>PCB Trophy - Rishi Roy</title></svelte:head>
+
 <!-- full-screen title-->
 <Title
 	title="PCB Trophy"
@@ -44,12 +46,12 @@
 <!-- scrolly turntable animation -->
 <ScrollyAnimation {frames} />
 
-<!-- 2 side-by-side images with captions -->
-<ImageCols images={imageData} />
+<div class="mx-8 md:mx-40">
+	<!-- 2 side-by-side images with captions -->
+	<ImageCols images={imageData} />
 
-<!-- paragraphs -->
-<div class="flex flex-col gap-12">
-	<div class="mx-8 md:mx-40">
+	<!-- paragraphs -->
+	<div class="flex flex-col gap-12">
 		<h3>Electronics Design (ECAD)</h3>
 		<p>
 			The PCB features a TPS610985 boost converter IC to step up the voltage from a single AAA

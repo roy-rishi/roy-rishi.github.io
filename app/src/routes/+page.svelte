@@ -13,6 +13,8 @@
 	};
 </script>
 
+<svelte:head><title>About - Rishi Roy</title></svelte:head>
+
 <!-- title fills viewport height-->
 <div class="h-screen">
 	<!-- centered at 1/3 from top -->

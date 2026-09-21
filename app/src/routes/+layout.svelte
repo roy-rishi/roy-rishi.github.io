@@ -2,7 +2,7 @@
 
 <script lang="ts">
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.png';
 	import Nav from '$lib/Nav.svelte';
 	import Footer from '$lib/Footer.svelte';
 
