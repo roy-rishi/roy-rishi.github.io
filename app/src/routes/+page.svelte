@@ -8,6 +8,7 @@
 	import trophyThumb from '$lib/assets/trophy/lights-on.jpg';
 	import lightboxThumb from '$lib/assets/lightbox/DSC_0296.jpg';
 	import canTesterThumb from '$lib/assets/can-tester/ui.png';
+	import emailThumb from '$lib/assets/email/email.png'
 
 	let scrollToContent = () => {
 		document.getElementById('content')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -49,5 +50,11 @@
 		path="{base}/project/can-tester"
 		thumbnail={canTesterThumb}
 		description=""
+	/>
+	<ProjectCard
+		title="Email Verification"
+		path="{base}/project/email"
+		thumbnail={emailThumb}
+		description="Husky Cycling Club's email verification system provides a low-friction and secure way for new Discord members to gain full read/write access"
 	/>
 </div>

@@ -10,8 +10,8 @@
 		<h3>{title}</h3>
 		<p class="grow">{description}</p>
 		<a
-			class="rounded-2xl border border-blue-950 px-2 font-medium hover:bg-blue-950 hover:text-blue-100"
-			href={path}>Read More →</a
+			class="rounded-2xl border border-transparent hover:border-blue-950 px-2 font-semibold"
+			href={path}>More →</a
 		>
 	</div>
 </div>
