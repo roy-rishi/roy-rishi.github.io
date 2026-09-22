@@ -2,6 +2,7 @@
 
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
+	import { base } from '$app/paths';
 
 	// images
 	import trophyThumb from '$lib/assets/trophy/lights-on.jpg';
@@ -33,19 +34,19 @@
 
 	<ProjectCard
 		title="PCB Trophy"
-		path="/project/pcb-trophy"
+		path="{base}/project/pcb-trophy"
 		thumbnail={trophyThumb}
 		description="A trophy-shaped PCB with battery-powered lighting. Decorated with vector-defined copper regions, solder mask exclusions, and silkscreen."
 	/>
 	<ProjectCard
 		title="Lithopane Lightbox"
-		path="/project/lightbox"
+		path="{base}/project/lightbox"
 		thumbnail={lightboxThumb}
 		description="A Bluetooth-controlled LED lightbox that displays an image by illuminating a 3D lithopane"
 	/>
 	<ProjectCard
 		title="CAN Tester"
-		path="/project/can-tester"
+		path="{base}/project/can-tester"
 		thumbnail={canTesterThumb}
 		description=""
 	/>
