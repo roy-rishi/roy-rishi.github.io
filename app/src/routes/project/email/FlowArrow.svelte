@@ -1,0 +1,1 @@
+<p class="text-6xl font-medium text-center my-6">↓</p>

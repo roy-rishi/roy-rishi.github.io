@@ -55,6 +55,6 @@
 		title="Email Verification"
 		path="{base}/project/email"
 		thumbnail={emailThumb}
-		description="Husky Cycling Club's email verification system provides a low-friction and secure way for new Discord members to gain full read/write access"
+		description="Husky Cycling Club's email verification system provides an easy and fast option for new members"
 	/>
 </div>
