@@ -23,13 +23,22 @@
 	</p>
 	<p>
 		Previously, new members had to fill out a Google Form while signed into their university Google
-		account. It would then take up to a week for an officer to manually grant them elevated permissions in
-		our Discord server. The new system grants members immediate access to our Discord server if they
-		have a current university email address.
+		account. It would then take up to a week for an officer to manually grant them elevated
+		permissions in our Discord server. The new system grants members immediate access to our Discord
+		server if they have a current university email address.
 	</p>
 	<p>
 		What used to take days now takes seconds, improving our ability to engage with prospective
 		members.
+	</p>
+
+	<h3>Serverless Architecture</h3>
+	<p>
+		I leverage Cloudflare Workers for high performance, low-cost back-end hosting. Serverless
+		Workers don't require provisioning, and automatically scale from 0 daily users up to peak usage
+		that may occur during club meetings. JWT-based session management averts the need for persistent
+		storage, isolating requests from failures and allowing them to be served at the closest
+		Cloudflare server to the user.
 	</p>
 
 	<h3 class="mt-6">Verification Flow</h3>
@@ -39,14 +48,16 @@
 	</p>
 </div>
 
-<div class="mx-auto my-18 w-3/4 text-center sm:w-2/3 md:w-2/5">
+<div class="mx-auto my-18 w-3/4 text-center sm:w-2/3 md:w-1/2">
 	<LargeImage image={startBtnImg} caption="Users begin by selecting 'Verify with NetID'" />
 	<FlowArrow />
 
-	<LargeImage
-		image={modalImg}
-		caption="Users enter their email address while still signed into Discord"
-	/>
+	<div class="mx-15">
+		<LargeImage
+			image={modalImg}
+			caption="Users enter their email address while still signed into Discord"
+		/>
+	</div>
 	<p>
 		On submission, Discord's servers POST the users's email address, name, and Discord account ID to
 		my server. Because these requests are signed, my server can use its key to ensure that the
