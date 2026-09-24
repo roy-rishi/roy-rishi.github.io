@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-    let { frames }: { frames: string[] } = $props();
+    let { frames, scrollDist }: { frames: string[], scrollDist: string } = $props();
 
 	let currentFrame = $state(0);
 	let isLoaded = $state(false);
@@ -19,7 +19,7 @@
 	});
 
 	const frameStartIndex = 0;
-	const frameEndIndex = 299;
+	const frameEndIndex = frames.length - 1;
 
 	let sticky: HTMLElement | null;
 	let bounding: HTMLElement | null;
@@ -44,7 +44,6 @@
 				frameStartIndex
 		);
 		currentFrame = frameIndex;
-		console.log(frameIndex);
 	}
 
 	onMount(() => {
@@ -53,11 +52,11 @@
 
 		updateFrame();
 		window.addEventListener('scroll', updateFrame);
-	});    
+	});    	
 </script>
 
-<!-- 3x viewport height -->
-<div id="bounding-container" class="relative h-[300vh]">
+<!-- viewport height + scroll distance -->
+<div id="bounding-container" class="relative" style="height: calc(100vh + {scrollDist})">
 	<!-- sticky scrolling turntable -->
 	<div id="sticky-container" class="sticky top-0 h-screen w-full">
 		{#if !isLoaded}

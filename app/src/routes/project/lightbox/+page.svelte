@@ -4,6 +4,7 @@
 <script lang="ts">
 	import ImageCols from '$lib/ImageCols.svelte';
 	import LargeImage from '$lib/LargeImage.svelte';
+	import ScrollyAnimation from '$lib/ScrollyAnimation.svelte';
 	import Title from '$lib/Title.svelte';
 
 	// images
@@ -11,7 +12,6 @@
 	import controllerFront from '$lib/assets/lightbox/DSC_0296.jpg';
 	import controllerBack from '$lib/assets/lightbox/DSC_0298.jpg';
 	import ledGrid from '$lib/assets/lightbox/led-grid.jpg';
-
 	const imageData = [
 		{
 			src: controllerFront,
@@ -24,6 +24,17 @@
 			width: '50vw'
 		}
 	];
+
+	// exploded view animation frames
+	const frames = new Array(231);
+	const modules = import.meta.glob('$lib/assets/lightbox/exploded-view/*.webp', {
+		eager: true,
+		import: 'default'
+	});
+	for (const [path, url] of Object.entries(modules)) {
+		const frameNum = parseInt(path.slice(-9, -5));
+		frames[frameNum - 1] = url;
+	}
 </script>
 
 <svelte:head><title>Lithopane Lightbox - Rishi Roy</title></svelte:head>
@@ -34,7 +45,10 @@
 	image={titleImg}
 />
 
+
 <div class="mx-8 flex flex-col gap-4 md:mx-40">
+	<ScrollyAnimation {frames} scrollDist="250vh" />
+	<p class="translate-y-[-15vh]"></p>
 	<h3>Controller PCB</h3>
 	<p>
 		I designed this PCB around an ESP32-S3 SoC. It runs the NimBLE Bluetooth Low-Energy (BLE) stack,
@@ -47,9 +61,12 @@
 		events, BLE state management, and button input all happens reliably. Message queues pass
 		commands and data between tasks.
 	</p>
-    <p>
-        The ESP32-S3 features a native USB peripheral, so I exposed two GPIOs to a 3-pin header (GND, D+, and D-) labeled PGRM1. I use this header to program and debug the board, and I power the board through its USB-C connector. When mounted in its case, only the USB-C connector, along with a button, are exposed.
-    </p>
+	<p>
+		The ESP32-S3 features a native USB peripheral, so I exposed two GPIOs to a 3-pin header (GND,
+		D+, and D-) labeled PGRM1. I use this header to program and debug the board, and I power the
+		board through its USB-C connector. When mounted in its case, only the USB-C connector, along
+		with a button, are exposed.
+	</p>
 	<div class="my-20">
 		<ImageCols images={imageData} />
 	</div>

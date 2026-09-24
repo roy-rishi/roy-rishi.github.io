@@ -44,7 +44,7 @@
 />
 
 <!-- scrolly turntable animation -->
-<ScrollyAnimation {frames} />
+<ScrollyAnimation {frames} scrollDist="200vh" />
 
 <div class="mx-8 md:mx-40">
 	<!-- 2 side-by-side images with captions -->
