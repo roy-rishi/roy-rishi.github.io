@@ -1,4 +1,4 @@
-<!-- Lithopane Lightbox -->
+<!-- Lithophane Lightbox -->
 
 <script lang="ts">
 	import ImageCols from '$lib/ImageCols.svelte';
@@ -37,11 +37,11 @@
 	}
 </script>
 
-<svelte:head><title>Lithopane Lightbox - Rishi Roy</title></svelte:head>
+<svelte:head><title>Lithophane Lightbox - Rishi Roy</title></svelte:head>
 
 <Title
-	title="Lithopane Lightbox"
-	description="A Bluetooth-controlled multi-color lightbox that illuminates a 3D lithopane to display an image"
+	title="Lithophane Lightbox"
+	description="A Bluetooth-controlled lightbox that displays an image by illuminating a 3D lithophane"
 	image={titleImg}
 />
 

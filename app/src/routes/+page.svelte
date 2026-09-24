@@ -40,10 +40,10 @@
 		description="A trophy-shaped PCB with battery-powered lighting. Decorated with vector-defined copper regions, solder mask exclusions, and silkscreen."
 	/>
 	<ProjectCard
-		title="Lithopane Lightbox"
+		title="Lithophane Lightbox"
 		path="{base}/project/lightbox"
 		thumbnail={lightboxThumb}
-		description="A Bluetooth-controlled LED lightbox that displays an image by illuminating a 3D lithopane"
+		description="A Bluetooth-controlled LED lightbox that displays an image by illuminating a 3D lithophane"
 	/>
 	<ProjectCard
 		title="CAN Tester"
