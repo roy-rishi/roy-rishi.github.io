@@ -2,6 +2,7 @@
 	import Title from '$lib/Title.svelte';
 	import FlowArrow from './FlowArrow.svelte';
 	import LargeImage from '$lib/LargeImage.svelte';
+	import LinkButton from '$lib/LinkButton.svelte';
 	// images
 	import emailImg from '$lib/assets/email/email.png';
 	import startBtnImg from '$lib/assets/email/start-btn.png';
@@ -88,4 +89,12 @@
 		image={confirmImg}
 		caption="Verification is complete! Users receive a confirmation message."
 	/>
+</div>
+
+<div class="mx-8 flex flex-col gap-4 md:mx-40">
+	<h3>Links</h3>
+	<div class="flex flex-wrap gap-3">
+		<LinkButton url="https://github.com/roy-rishi/hcc-bot" name="GitHub Repo" />
+		<LinkButton url="https://www.huskycyclinguw.com/verify?token=test-of-invalid-token" name="Live Demo: Invalid Token" />
+	</div>
 </div>

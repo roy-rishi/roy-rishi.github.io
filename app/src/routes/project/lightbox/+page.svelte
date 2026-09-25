@@ -3,6 +3,7 @@
 <script lang="ts">
 	import ImageCols from '$lib/ImageCols.svelte';
 	import LargeImage from '$lib/LargeImage.svelte';
+	import LinkButton from '$lib/LinkButton.svelte';
 	import ScrollyAnimation from '$lib/ScrollyAnimation.svelte';
 	import Title from '$lib/Title.svelte';
 
@@ -105,11 +106,16 @@
 		individually-addressable RGB LEDs. I haven't gotten around to building a mobile app, so for now
 		I use the nRF Connect BLE testing app from Nordic Semiconductor to control the lightbox.
 	</p>
-	<div class="w-1/2 sm:w-2/5 md:w-1/2 mx-auto">
+	<div class="mx-auto w-1/2 sm:w-2/5 md:w-1/2">
 		<LargeImage
 			image={nrfConnect}
 			caption="The nRF Connect application can connect, bond, and write to the lightbox"
 		/>
+	</div>
+
+	<h3>Links</h3>
+	<div class="flex flex-wrap gap-3">
+		<LinkButton url="https://github.com/roy-rishi/lithophane-lightbox" name="GitHub Repo" />
 	</div>
 </div>
 
