@@ -11,6 +11,8 @@
 	import confirmImg from '$lib/assets/email/confirm.png';
 </script>
 
+<svelte:head><title>Email Verification - Rishi Roy</title></svelte:head>
+
 <Title
 	title="Email Verification"
 	description="Husky Cycling Club's email verification system"
