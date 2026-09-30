@@ -15,6 +15,6 @@
 <div class="mx-8 flex flex-col gap-4 md:mx-40">
 	<h3>Links</h3>
 	<div class="flex flex-wrap gap-3">
-		<LinkButton url="https://github.com/huskyroboticsteam/can-tester" name="GitHub Repo" />
+		<LinkButton url="https://github.com/huskyroboticsteam/can-tester" name="Repository" />
 	</div>
 </div>

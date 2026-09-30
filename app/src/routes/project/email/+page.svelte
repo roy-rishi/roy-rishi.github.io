@@ -96,7 +96,7 @@
 <div class="mx-8 flex flex-col gap-4 md:mx-40">
 	<h3>Links</h3>
 	<div class="flex flex-wrap gap-3">
-		<LinkButton url="https://github.com/roy-rishi/hcc-bot" name="GitHub Repo" />
-		<LinkButton url="https://www.huskycyclinguw.com/verify?token=test-of-invalid-token" name="Live Demo: Invalid Token" />
+		<LinkButton url="https://github.com/roy-rishi/hcc-bot" name="Repository" />
+		<LinkButton url="https://www.huskycyclinguw.com/verify?token=test-of-invalid-token" name="Live Demo of Invalid Token" />
 	</div>
 </div>

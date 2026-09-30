@@ -40,9 +40,5 @@
 		h3 {
 			@apply text-4xl font-semibold;
 		}
-
-		a {
-			@apply hover:underline;
-		}
 	}
 </style>

@@ -134,7 +134,7 @@
 
 	<h3>Links</h3>
 	<div class="flex flex-wrap gap-3">
-		<LinkButton url="https://github.com/roy-rishi/lithophane-lightbox" name="GitHub Repo" />
+		<LinkButton url="https://github.com/roy-rishi/lithophane-lightbox" name="Repository" />
 	</div>
 </div>
 
