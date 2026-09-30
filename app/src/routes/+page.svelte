@@ -6,7 +6,7 @@
 
 	// images
 	import trophyThumb from '$lib/assets/trophy/lights-on.jpg';
-	import lightboxThumb from '$lib/assets/lightbox/DSC_0296.jpg';
+	import lightboxThumb from '$lib/assets/lightbox/hdr-wide.jpg';
 	import canTesterThumb from '$lib/assets/can-tester/ui.png';
 	import emailThumb from '$lib/assets/email/email.png'
 

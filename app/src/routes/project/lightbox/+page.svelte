@@ -8,10 +8,11 @@
 	import Title from '$lib/Title.svelte';
 
 	// images
-	import titleImg from '$lib/assets/lightbox/DSC_0296.jpg';
+	import titleImg from '$lib/assets/lightbox/hdr.jpg';
 	import controllerFront from '$lib/assets/lightbox/DSC_0296.jpg';
 	import controllerBack from '$lib/assets/lightbox/DSC_0298.jpg';
 	import ledGrid from '$lib/assets/lightbox/led-grid.jpg';
+	import diffusion from '$lib/assets/lightbox/DSC_0282.jpg';
 	const imageData = [
 		{
 			src: controllerFront,
@@ -21,6 +22,18 @@
 		{
 			src: controllerBack,
 			caption: 'The back of the controller PCB',
+			width: '50vw'
+		}
+	];
+	const litUp = [
+		{
+			src: diffusion,
+			caption: 'The uniform lighting beneath the lithophane',
+			width: '50vw'
+		},
+		{
+			src: titleImg,
+			caption: 'The image produced by the lithophane',
 			width: '50vw'
 		}
 	];
@@ -111,6 +124,12 @@
 			image={nrfConnect}
 			caption="The nRF Connect application can connect, bond, and write to the lightbox"
 		/>
+	</div>
+
+	<h3>Diffusion</h3>
+	<p>A diffusion layer provides a uniform plane of light beneath the lithophane.</p>
+	<div class="my-15 mx-[5vw]">
+		<ImageCols images={litUp} />
 	</div>
 
 	<h3>Links</h3>
